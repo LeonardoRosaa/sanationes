@@ -1,6 +1,6 @@
-import 'package:sanationes/sanationes.dart';
+// import 'package:sanationes/sanationes.dart';
 
-void main() {
-  var awesome = Awesome();
-  print('awesome: ${awesome.isAwesome}');
-}
+// void main() {
+//   var awesome = Awesome();
+//   print('awesome: ${awesome.isAwesome}');
+// }
