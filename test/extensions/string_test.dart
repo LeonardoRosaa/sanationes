@@ -17,5 +17,19 @@ void main() {
         expect('peter+1@gmail.com'.isEmail, false);
       });
     });
+
+    group('Brazil post code', () {
+      test('should be a post code', () {
+        expect('69945-970'.isBrazilPostCode, isTrue);
+      });
+
+      test('should be an incomplete post code', () {
+        expect('69945-9'.isBrazilPostCode, isFalse);
+      });
+
+      test('should be a wrong post code', () {
+        expect('699A5-9AA'.isBrazilPostCode, isFalse);
+      });
+    });
   });
 }

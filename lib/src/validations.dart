@@ -23,4 +23,16 @@ class Validations {
   bool isEmail(String value) {
     return expression.email.hasMatch(value);
   }
+
+  /// This method does make a validate to check [value] is even
+  /// a Brazil post code
+  ///
+  /// Example
+  /// ```dart
+  /// isBrazilPostCode('69945-970'); // true
+  /// isBrazilPostCode('69945-9') // false
+  /// isBrazilPostCode('699A5-9AA') // false
+  /// ```
+  bool isBrazilPostCode(String value) =>
+      expression.brazilPostCode.hasMatch(value);
 }
