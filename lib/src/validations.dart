@@ -35,4 +35,16 @@ class Validations {
   /// ```
   bool isBrazilPostCode(String value) =>
       expression.brazilPostCode.hasMatch(value);
+
+  /// This method does make a replace of all special
+  /// characters by [replace] value
+  ///
+  /// Example
+  /// ```dart
+  /// replaceSpecialCharacters('#My n@m& is/ Peter P@rker'); // My nm is Peter Prker
+  /// replaceSpecialCharacters('My numb&r !s 974#9-&18&') // My numbr s 974918
+  /// replaceSpecialCharacters('My name is Peter Parker') // My name is Peter Parker
+  /// ```
+  String replaceSpecialCharacters(String value, String replace) =>
+      value.replaceAll(expression.onlyAlphanumeric, replace);
 }

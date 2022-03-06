@@ -31,5 +31,28 @@ void main() {
         expect('699A5-9AA'.isBrazilPostCode, isFalse);
       });
     });
+
+    group('Special characters', () {
+      test('should be replace all special characters', () {
+        expect(
+          '#My n@m& is/ Peter P@rker'.replaceSpecialCharacters(''),
+          'My nm is Peter Prker',
+        );
+      });
+
+      test('should be replace all special characters between numbers', () {
+        expect(
+          'My numb&r !s 974#9-&18&'.replaceSpecialCharacters(''),
+          'My numbr s 974918',
+        );
+      });
+
+      test('should can not replace special characters', () {
+        expect(
+          'My name is Peter Parker'.replaceSpecialCharacters(''),
+          'My name is Peter Parker',
+        );
+      });
+    });
   });
 }

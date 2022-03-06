@@ -10,6 +10,9 @@ class RegularExpression extends Equatable {
   /// [Brazil post code] expression
   RegExp get brazilPostCode => RegExp(r'^\d{5}-\d{3}$');
 
+  /// [Special characters] regular expression
+  RegExp get onlyAlphanumeric => RegExp(r'[^a-zA-Z0-9 ]');
+
   @override
-  List<Object?> get props => [email, brazilPostCode];
+  List<Object?> get props => [email, brazilPostCode, onlyAlphanumeric];
 }
