@@ -1,4 +1,3 @@
-
 import 'foundation.dart';
 
 /// There's all methods to do validations with **regular expressions**

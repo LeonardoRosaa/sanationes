@@ -1,14 +1,11 @@
 name: sanationes
-description: A starting point for Dart libraries or applications.
-version: 1.0.0
-# homepage: https://www.example.com
+description: A Dart package for all platforms to make some validations in native data types.
+version: 0.0.1
+repository: https://github.com/LeonardoRosaa/sanationes
 
 environment:
   sdk: '>=2.16.1 <3.0.0'
 
-
-# dependencies:
-#   path: ^1.8.0
 
 dev_dependencies:
   lints: ^1.0.0
