@@ -1,5 +1,4 @@
-import 'package:sanationes/src/regular_expression.dart';
-import 'package:sanationes/src/validations.dart';
+import 'package:sanationes/src/foundation/foundation.dart';
 import 'package:test/expect.dart';
 import 'package:test/scaffolding.dart';
 

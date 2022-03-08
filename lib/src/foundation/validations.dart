@@ -1,4 +1,5 @@
-import 'package:sanationes/src/regular_expression.dart';
+
+import 'foundation.dart';
 
 /// There's all methods to do validations with **regular expressions**
 class Validations {

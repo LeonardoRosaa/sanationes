@@ -1,4 +1,4 @@
-import 'package:sanationes/sanationes.dart';
+import 'package:sanationes/src/sanationes.dart';
 
 extension StringExtension on String {
   /// Does makes validation to check this String is even an email
