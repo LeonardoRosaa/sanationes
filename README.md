@@ -1,39 +1,40 @@
-<!-- 
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# Sanationes
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages). 
+A Dart package for all platforms to make some validations in native data types.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages). 
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+**Note**: it's a starting package, however, has some validations to add yet.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+- Use external class to make validations;
+- Use extension method to make validations;
 
-## Getting started
+## Installation
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+Easy and simple, add `sanationes` as a [dependency in your pubspec.yaml file](https://docs.flutter.dev/development/packages-and-plugins/using-packages).
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
+Generally, can you use by two ways, by external `Validations` class or `extensions` of data type.
+
+Example by `Validations` class:
 
 ```dart
-const like = 'sample';
+import 'package:sanationes/sanationes.dart';
+
+void main() {
+  print(Validations.instance().isEmail('peter@gmail.com')); // true
+}
 ```
 
-## Additional information
+Or, by `extensions`:
 
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
+```dart
+import 'package:sanationes/sanationes.dart';
+
+void main() {
+  print('peter@gmail.com'.isEmail);
+}
+```
+
+**Note**: it's a starting package, however, has some validations to add yet.
