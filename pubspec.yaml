@@ -1,11 +1,10 @@
 name: sanationes
 description: A Dart package for all platforms to make some validations in native data types.
-version: 0.0.2
+version: 0.0.3
 repository: https://github.com/LeonardoRosaa/sanationes
 
 environment:
   sdk: '>=2.12.0 <3.0.0'
-
 
 dev_dependencies:
   lints: ^1.0.0

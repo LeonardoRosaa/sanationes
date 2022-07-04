@@ -5,16 +5,22 @@ import 'package:sanationes/src/extensions/string.dart';
 void main() {
   group('String extension', () {
     group('email', () {
+
+      test('should be an email with long domain', () {
+        expect('peter@parker.industry'.isEmail, isTrue);
+         expect('peter@industry.network'.isEmail, isTrue);
+      });
+
       test('should be email', () {
-        expect('peter@gmail.com'.isEmail, true);
+        expect('peter@gmail.com'.isEmail, isTrue);
       });
 
       test('should be incomplete email', () {
-        expect('peter@'.isEmail, false);
+        expect('peter@'.isEmail, isFalse);
       });
 
       test('can not use +number trick', () {
-        expect('peter+1@gmail.com'.isEmail, false);
+        expect('peter+1@gmail.com'.isEmail, isFalse);
       });
     });
 

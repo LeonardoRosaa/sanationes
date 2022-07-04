@@ -5,7 +5,7 @@ class RegularExpression extends Equatable {
   const RegularExpression();
 
   /// [email] regular expression
-  RegExp get email => RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$');
+  RegExp get email => RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,10}$');
 
   /// [Brazil post code] expression
   RegExp get brazilPostCode => RegExp(r'^\d{5}-\d{3}$');
